@@ -1,0 +1,3 @@
+# Notes
+
+Rails API Backend
