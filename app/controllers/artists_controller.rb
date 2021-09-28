@@ -6,7 +6,7 @@ class ArtistsController < ApplicationController
 
     def show
         artist = Artist.find(params[:id])
-        render json: ArtSerializer.new(artist)
+        render json: ArtistSerializer.new(artist)
     end
 
 
