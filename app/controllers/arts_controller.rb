@@ -1,6 +1,12 @@
 class ArtsController < ApplicationController
     def index
         arts = Art.all
-        render json: arts.to_json(except: [:created_at, :updated_at], include: {artist: {only: [:name]}})
+        render json: ArtSerializer.new(arts, {include: [:artist]})
     end
+
+    def show
+        art = Art.find(params[:id])
+        render json: ArtSerializer.new(art, {include: [:artist]})
+    end
+
 end
