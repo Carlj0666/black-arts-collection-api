@@ -6,6 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-artist = Artist.create(name: 'Carl')
+# artist = Artist.create(name: 'Carl')
 
-# art = Art.create({title: 'one piece' link: 'link_to_one_piece' artist_id: })
+# art = Art.create(title: 'one piece', link: 'link_to_one_piece', artist_id: '1')
